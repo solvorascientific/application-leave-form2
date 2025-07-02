@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application for Leave</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
+    form { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1, h2 { text-align: center; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+    button { margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <h1>APPLICATION FOR LEAVE</h1>
+  <form action="https://formsubmit.co/lab.solvorascientific@gmail.com" method="POST">
+    <label>OFFICE/DEPARTMENT</label>
+    <input type="text" name="department" value="Research and Development" required>
+
+    <label>NAME</label>
+    <input type="text" name="name" placeholder="Last, First, Middle" required>
+
+    <label>DATE OF FILING</label>
+    <input type="date" name="date_of_filing" required>
+
+    <label>POSITION</label>
+    <input type="text" name="position" required>
+
+    <label>SALARY (PHP)</label>
+    <input type="number" name="salary" required>
+
+    <h2>DETAILS OF APPLICATION</h2>
+
+    <label>TYPE OF LEAVE TO BE AVAILED OF</label>
+    <select name="leave_type" required>
+      <option value="Vacation Leave">Vacation Leave</option>
+      <option value="Mandatory/Forced Leave">Mandatory/Forced Leave</option>
+      <option value="Sick Leave">Sick Leave</option>
+      <option value="Maternity Leave">Maternity Leave</option>
+      <option value="Paternity Leave">Paternity Leave</option>
+      <option value="Special Privilege Leave">Special Privilege Leave</option>
+      <option value="Solo Parent Leave">Solo Parent Leave</option>
+      <option value="Study Leave">Study Leave</option>
+      <option value="10-Day VAWC Leave">10-Day VAWC Leave</option>
+      <option value="Rehabilitation Privilege">Rehabilitation Privilege</option>
+      <option value="Special Leave Benefits for Women">Special Leave Benefits for Women</option>
+      <option value="Special Emergency (Calamity) Leave">Special Emergency (Calamity) Leave</option>
+      <option value="Adoption Leave">Adoption Leave</option>
+      <option value="Monetization of Leave Credits">Monetization of Leave Credits</option>
+      <option value="Terminal Leave">Terminal Leave</option>
+      <option value="Others">Others</option>
+    </select>
+
+    <label>DETAILS OF LEAVE (if applicable)</label>
+    <textarea name="leave_details" placeholder="Specify illness, destination, study program, etc."></textarea>
+
+    <label>NUMBER OF WORKING DAYS APPLIED FOR</label>
+    <input type="number" name="working_days" required>
+
+    <label>COMMUTATION</label>
+    <select name="commutation" required>
+      <option value="Requested">Requested</option>
+      <option value="Not Requested">Not Requested</option>
+    </select>
+
+    <label>INCLUSIVE DATES</label>
+    <input type="text" name="inclusive_dates" placeholder="e.g. July 10–14, 2025" required>
+
+    <label>RECOMMENDATION</label>
+    <select name="recommendation">
+      <option value="For Approval">For Approval</option>
+      <option value="For Disapproval">For Disapproval (due to...)</option>
+    </select>
+    <textarea name="recommendation_details" placeholder="If disapproved, specify reason"></textarea>
+
+    <label>PROJECT SUPERVISOR</label>
+    <input type="text" name="supervisor" value="IS2 Edward A Tayag PN">
+
+    <label>CHIEF OF OFFICE</label>
+    <input type="text" name="chief" value="LTC KAREN LELETH P DIPALING PA">
+
+    <button type="submit">Submit Leave Application</button>
+  </form>
+</body>
+</html>
